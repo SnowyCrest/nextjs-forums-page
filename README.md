@@ -16,7 +16,7 @@ A modern, interactive forum platform built with Next.js and React.
 
 | Forums Overview | Post Details |
 |----------------|--------------|
-| ![Forums Page](/public/forums-overview.png) | ![Post Details](/public/post-details.png) |
+| ![Forums Page](/public/forums_showcase_1.png) | ![Post Details](/public/forums_showcase_2.png) |
 | Main forums listing with filters and search | Detailed view of individual posts with comments |
 
 ## 🛠️ Getting Started
