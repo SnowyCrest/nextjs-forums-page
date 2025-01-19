@@ -1,4 +1,4 @@
-# 🚀 Next.js Forums Page
+# 💬 Next.js Forums Page
 
 A modern, interactive forum platform built with Next.js and React.
 
