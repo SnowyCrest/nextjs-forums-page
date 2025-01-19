@@ -10,14 +10,13 @@ A modern, interactive forum platform built with Next.js and React.
 - 💬 Real-time messaging system
 - 👍 Like/Unlike posts
 - 📌 Pin important posts (Admin only)
-- 🎨 Modern UI with responsive design
 - 👤 User permissions system
 - 🔄 Pagination support
 
 | Forums Overview | Post Details |
 |----------------|--------------|
 | ![Forums Page](/public/forums_showcase_1.png) | ![Post Details](/public/forums_showcase_2.png) |
-| Main forums listing with filters and search | Detailed view of individual posts with comments |
+| Main forums listing with filters, search, and messaging | Create a new post with assigning tags and adding images |
 
 ## 🛠️ Getting Started
 
@@ -27,7 +26,7 @@ First, run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000/forums) with your browser to see the result.
+Open [http://localhost:3000/forums](http://localhost:3000/forums) with your browser to see the result.
 
 ## 🔑 Admin Features
 
