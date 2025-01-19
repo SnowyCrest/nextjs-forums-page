@@ -1,6 +1,6 @@
 # 💬 Next.js Forums Page
 
-A modern, interactive forum platform built with Next.js and React.
+A modern, interactive forum platform based on Discord's forums pages built with Next.js and React.
 
 ## ✨ Features
 
