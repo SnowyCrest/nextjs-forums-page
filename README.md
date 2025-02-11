@@ -46,7 +46,7 @@ npm install
 ```bash
 npm run dev
 ```
-Open localhost:3000 and you will be able to see the results.
+Open localhost:3000/forums and you will be able to see the results.
 
 ## 📝 License
 
