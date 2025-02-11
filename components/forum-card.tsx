@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -49,19 +48,15 @@ export function ForumCard({
   tags, 
   replies, 
   likes, 
-  messages, 
   imageUrls,
   onToggleMessages,
   onToggleLike,
   onDeletePost,
-  onDeleteMessage,
   isExpanded,
   isLiked,
   isActionInProgress,
   isPinned,
   onTogglePin,
-  currentUser,
-  canManageMessage
 }: ForumCardProps) {
   return (
     <Card 

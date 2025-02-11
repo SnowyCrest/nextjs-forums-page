@@ -53,7 +53,7 @@ let forumPosts = [
   }
 ]
 
-let allTags = ["announcement", "welcome", "tips", "newbies", "events", "community"]
+const allTags = ["announcement", "welcome", "tips", "newbies", "events", "community"]
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)

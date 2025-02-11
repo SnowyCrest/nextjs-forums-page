@@ -34,7 +34,6 @@ export default function ForumsPage() {
   const [allTags, setAllTags] = useState<string[]>([])
   const [currentPage, setCurrentPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
-  const [isLoading, setIsLoading] = useState(true)
   const [initialLoading, setInitialLoading] = useState(true)
   const [actionInProgress, setActionInProgress] = useState<{
     type: 'like' | 'delete' | 'message';
@@ -261,7 +260,11 @@ export default function ForumsPage() {
                   {...post} 
                   onToggleMessages={handleToggleMessages}
                   onToggleLike={handleToggleLike}
-                  onDeletePost={canManagePost(post.author) ? handleDeletePost : undefined}
+                  onDeletePost={(postId: number) => {
+                    if (canManagePost(post.author)) {
+                      void handleDeletePost(postId);
+                    }
+                  }}
                   onDeleteMessage={handleDeleteMessage}
                   onTogglePin={isAdmin ? handleTogglePin : undefined}
                   isExpanded={post.id === expandedPostId}
