@@ -1,4 +1,4 @@
-# 💬 Next.js Forums Page
+# 💬 Next.js Forums Page Component
 
 A modern, interactive forum platform based on Discord's forums pages built with Next.js and React.
 
