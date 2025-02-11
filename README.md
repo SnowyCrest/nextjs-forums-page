@@ -28,11 +28,14 @@ Toggle admin mode to access additional features:
 
 ## 💻 Tech Stack
 
-- Next.js 13+ with App Router
-- React
-- TypeScript
-- Tailwind CSS
-- Shadcn UI Components
+<img align="left" alt="TypeScript" width="28px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+<img align="left" alt="Supabase" width="28px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" />
+<img align="left" alt="NextJS" width="28px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
+<img align="left" alt="Vercel" width="28px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" />
+<img align="left" alt="React" width="28px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+<br clear = "left"/>
+
+---
 
 ## 🚀 Getting Started
 
