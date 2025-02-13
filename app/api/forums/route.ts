@@ -106,17 +106,24 @@ export async function POST(request: Request) {
     }
 
     case 'toggleLike': {
+      // get current likes
+      const { data: currentPost } = await supabase
+        .from('forum_posts')
+        .select('likes')
+        .eq('id', data.postId)
+        .single()
+    
+      const newLikes = data.isLiked 
+        ? Math.max((currentPost?.likes || 0) - 1, 0)
+        : (currentPost?.likes || 0) + 1
+    
       const { data: post, error } = await supabase
         .from('forum_posts')
-        .update({ 
-          likes: data.isLiked 
-            ? supabase.rpc('decrement_likes', { row_id: data.postId })
-            : supabase.rpc('increment_likes', { row_id: data.postId })
-        })
+        .update({ likes: newLikes })
         .eq('id', data.postId)
         .select()
         .single()
-
+    
       if (error) return NextResponse.json({ error: error.message }, { status: 500 })
       return NextResponse.json({ success: true, post })
     }

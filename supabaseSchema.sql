@@ -35,6 +35,40 @@ create table post_tags (
   primary key (post_id, tag_id)
 );
 
+-- increment likes
+create or replace function increment_likes(row_id bigint)
+returns integer
+language plpgsql
+as $$
+declare
+  current_likes integer;
+begin
+  update forum_posts
+  set likes = likes + 1
+  where id = row_id
+  returning likes into current_likes;
+  
+  return current_likes;
+end;
+$$;
+
+-- decrement likes
+create or replace function decrement_likes(row_id bigint)
+returns integer
+language plpgsql
+as $$
+declare
+  current_likes integer;
+begin
+  update forum_posts
+  set likes = greatest(likes - 1, 0)
+  where id = row_id
+  returning likes into current_likes;
+  
+  return current_likes;
+end;
+$$;
+
 -- indexes
 create index idx_forum_posts_created_at on forum_posts(created_at);
 create index idx_forum_messages_post_id on forum_messages(post_id);
